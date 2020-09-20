@@ -61,7 +61,7 @@ function generateMarkdown(data) {
   };
   const testGuide = () => {
     if (test) {
-      return "``` javascript \n👉 " + test;
+      return "## Test \n``` javascript \n👉 " + test;
     }
     return "";
   };

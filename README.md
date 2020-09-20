@@ -18,12 +18,13 @@
 
 
 ## Installation
-Download or clone  the files from my github repo run "npm install" to load all the dependencies.Then run the app from the terminal it will ask you some questions regarding the readme.md file 
+Download or clone the files from my github repo run "npm install" to load all the dependencies.Then run the app from the terminal it will ask you some questions regarding the readme.md file
 
 ## Usage
  Run from your editor terminal and answer the needed questions after you will be able to generate a readme file
 
-
+## Credits
+ uc-berkley instractors and TA's
 
 
 ## License
@@ -41,5 +42,6 @@ Download or clone  the files from my github repo run "npm install" to load all t
 ## How to reach me with additional questions
  Email : solomonmeresa8@gmail.com
 
+## Test 
 ``` javascript 
-👉 run node index.js
+👉 👉 run node index.js
