@@ -19,6 +19,32 @@ const questions = [
   },
   {
     type: "input",
+    name: "username",
+    message: "What is your project username? (Required)",
+    validate: (usernameInput) => {
+      if (usernameInput) {
+        return true;
+      } else {
+        console.log("Please enter your username!");
+        return false;
+      }
+    },
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "What is your project email? (Required)",
+    validate: (emailInput) => {
+      if (emailInput) {
+        return true;
+      } else {
+        console.log("Please enter your email!");
+        return false;
+      }
+    },
+  },
+  {
+    type: "input",
     name: "description",
     message: "What is the project Description? (Required)",
     validate: (descriptionInput) => {
