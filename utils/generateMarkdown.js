@@ -8,6 +8,7 @@ function generateMarkdown(data) {
     installation,
     contribution,
     usage,
+    test,
     credits,
   } = data;
   console.log(data);
@@ -58,6 +59,12 @@ function generateMarkdown(data) {
     }
     return "";
   };
+  const testGuide = () => {
+    if (test) {
+      return "``` javascript \n👉 " + test;
+    }
+    return "";
+  };
 
   // return ---
   return `# ${name}
@@ -70,13 +77,12 @@ function generateMarkdown(data) {
 
 
 ${descriptions()}
-## Table of Contents (Optional)
+##  Table of Contents
 
 * [Installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
 * [License](#license)
-
 
 
 ${installationSteps()}
@@ -86,7 +92,6 @@ ${usages()}
 ${credit()}
 
 
-
 ## License
 
 ${license.map((el) => {
@@ -94,12 +99,13 @@ ${license.map((el) => {
 })}
 
 
-
 ${contr()}
 
-
 ${user()}
+
 ${emailAddress()}
+
+${testGuide()}
 `;
 }
 

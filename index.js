@@ -20,7 +20,7 @@ const questions = [
   {
     type: "input",
     name: "username",
-    message: "What is your project username? (Required)",
+    message: "What is your github username? (Required)",
     validate: (usernameInput) => {
       if (usernameInput) {
         return true;
@@ -33,7 +33,7 @@ const questions = [
   {
     type: "input",
     name: "email",
-    message: "What is your project email? (Required)",
+    message: "What is your  email? (Required)",
     validate: (emailInput) => {
       if (emailInput) {
         return true;
@@ -106,6 +106,18 @@ const questions = [
     when: ({ confirmContribution }) => confirmContribution,
   },
   {
+    type: "confirm",
+    name: "confirmTest",
+    message: "Would you like to enter any Test guidelines?",
+    default: true,
+  },
+  {
+    type: "input",
+    name: "test",
+    message: "Please copy and paste your Test guidelines:",
+    when: ({ confirmTest }) => confirmTest,
+  },
+  {
     type: "checkbox",
     name: "license",
     default: "ISC",
@@ -130,7 +142,6 @@ const promptQuestions = () => {
 };
 
 // function to write README file
-// function writeToFile(fileName, data) {}
 
 const writeToFile = (fileContent) => {
   return new Promise((resolve, reject) => {
@@ -138,11 +149,8 @@ const writeToFile = (fileContent) => {
       // if there's an error, reject the Promise and send the error to the Promise's `.catch()` method
       if (err) {
         reject(err);
-        // return out of the function here to make sure the Promise doesn't accidentally execute the resolve() function as well
         return;
       }
-
-      // if everything went well, resolve the Promise and send the successful data to the `.then()` method
       resolve({
         ok: true,
         message: "README.md File created!",
@@ -151,11 +159,11 @@ const writeToFile = (fileContent) => {
   });
 };
 
-// function to initialize program
-function init() {}
+
+
 
 // function call to initialize program
-init();
+
 promptQuestions()
   .then((result) => {
     return generateMarkdown(result);
