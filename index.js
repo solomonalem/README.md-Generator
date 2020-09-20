@@ -94,6 +94,18 @@ const questions = [
     when: ({ confirmCredits }) => confirmCredits,
   },
   {
+    type: "confirm",
+    name: "confirmContribution",
+    message: "Would you like to enter any Contribution guidelines?",
+    default: true,
+  },
+  {
+    type: "input",
+    name: "contribution",
+    message: "Provide some 'Contribution guidelines':",
+    when: ({ confirmContribution }) => confirmContribution,
+  },
+  {
     type: "checkbox",
     name: "license",
     default: "ISC",

@@ -1,9 +1,3 @@
-// function to generate markdown for README
-function licenseCreator(arr) {
-  arr.forEach((el) => {
-    return `![License: ${el}](https://img.shields.io/badge/License-${el}-lightgrey.svg)`;
-  });
-}
 function generateMarkdown(data) {
   const {
     name,
@@ -12,11 +6,25 @@ function generateMarkdown(data) {
     license,
     description,
     installation,
+    contribution,
     usage,
     credits,
   } = data;
   console.log(data);
 
+  const descriptions = () => {
+    if (description) {
+      return `## Description\n ${description}`;
+    }
+    return "";
+  };
+
+  const installationSteps = () => {
+    if (installation) {
+      return `## Installation\n${installation}`;
+    }
+    return "";
+  };
   const usages = () => {
     if (usage) {
       return `## Usage\n ${usage}`;
@@ -29,25 +37,29 @@ function generateMarkdown(data) {
     }
     return "";
   };
+
+  const emailAddress = () => {
+    if (email) {
+      return `## How to reach me with additional questions\n Email : ${email}`;
+    }
+    return "";
+  };
+
+  const contr = () => {
+    if (contribution) {
+      console.log("00000" + contribution);
+      return `## Contribution \n ${contribution}`;
+    }
+    return "";
+  };
   const user = () => {
     if (username) {
       return `[My Github Profile](https://github.com/${username})`;
     }
     return "";
   };
-  const emailAddress = () => {
-    if (email) {
-      return `Email : ${email}`;
-    }
-    return "";
-  };
-  const installationSteps = () => {
-    if (installation) {
-      return `##Installation\n${installation}`;
-    }
-    return "";
-  };
 
+  // return ---
   return `# ${name}
 
   ${license.map((el) => {
@@ -56,8 +68,8 @@ function generateMarkdown(data) {
 
   
 
-## Description 
-${description}
+
+${descriptions()}
 ## Table of Contents (Optional)
 
 * [Installation](#installation)
@@ -66,29 +78,27 @@ ${description}
 * [License](#license)
 
 
-## Installation
 
-${installation}
+${installationSteps()}
 
 ${usages()}
 
-
 ${credit()}
-${user()}
+
+
 
 ## License
 
 ${license.map((el) => {
-  return `![License: ${el}](https://img.shields.io/badge/License-${el}-lightgrey.svg)\n`;
+  return `![License: ${el}](https://img.shields.io/badge/License-${el}-green.svg)\n`;
 })}
 
-## Contributing
-
-${installationSteps()}
 
 
-## Tests
-## How to reach me with additional questions
+${contr()}
+
+
+${user()}
 ${emailAddress()}
 `;
 }

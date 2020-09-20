@@ -1,11 +1,22 @@
-# we
+# s
+
+  ![License: EPL](https://img.shields.io/badge/License-EPL-green.svg)
+,![License: GPL](https://img.shields.io/badge/License-GPL-green.svg)
+,![License: IPL](https://img.shields.io/badge/License-IPL-green.svg)
+,![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+,![License: MPL](https://img.shields.io/badge/License-MPL-green.svg)
+,![License: Perl](https://img.shields.io/badge/License-Perl-green.svg)
+,![License: OFL](https://img.shields.io/badge/License-OFL-green.svg)
+,![License: Unlicense](https://img.shields.io/badge/License-Unlicense-green.svg)
+,![License: WTFPL](https://img.shields.io/badge/License-WTFPL-green.svg)
+,![License: Zlib](https://img.shields.io/badge/License-Zlib-green.svg)
+
 
   
 
-  
 
-## Description 
-we
+## Description
+ s
 ## Table of Contents (Optional)
 
 * [Installation](#installation)
@@ -14,26 +25,36 @@ we
 * [License](#license)
 
 
+
 ## Installation
-
-we
-
+s
 
 
 
 
-[My Github Profile](https://github.com/weeeee)
+
+
 
 ## License
 
+![License: EPL](https://img.shields.io/badge/License-EPL-green.svg)
+,![License: GPL](https://img.shields.io/badge/License-GPL-green.svg)
+,![License: IPL](https://img.shields.io/badge/License-IPL-green.svg)
+,![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+,![License: MPL](https://img.shields.io/badge/License-MPL-green.svg)
+,![License: Perl](https://img.shields.io/badge/License-Perl-green.svg)
+,![License: OFL](https://img.shields.io/badge/License-OFL-green.svg)
+,![License: Unlicense](https://img.shields.io/badge/License-Unlicense-green.svg)
+,![License: WTFPL](https://img.shields.io/badge/License-WTFPL-green.svg)
+,![License: Zlib](https://img.shields.io/badge/License-Zlib-green.svg)
 
 
-## Contributing
-
-##Installation
-we
 
 
-## Tests
+## Contribution 
+ uuuuuuuuuuuuuuuu
+
+
+[My Github Profile](https://github.com/s)
 ## How to reach me with additional questions
-[Email:]weeeeeeeeeeeeeeeeee
+ Email : s
