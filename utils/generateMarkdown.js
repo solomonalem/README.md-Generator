@@ -41,7 +41,7 @@ function generateMarkdown(data) {
 
   const emailAddress = () => {
     if (email) {
-      return `## How to reach me with additional questions\n Email : ${email}`;
+      return `## How to reach me\n Email : ${email}`;
     }
     return "";
   };
