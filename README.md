@@ -32,7 +32,7 @@ Download or clone the repo to your local machine and install the dependencies by
 
 
 ## Contribution 
- Fork it to your github repos ,then you can make any changes with out affecting the main source code
+ Fork it to your github ,then you can make any changes with out affecting the main source code
 
 [My Github Profile](https://github.com/solomonmeresa)
 
